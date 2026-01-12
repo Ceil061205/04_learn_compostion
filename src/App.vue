@@ -1,26 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <!-- 对于template的数据会自动解包 -->
+    <h1>{{ counter }}</h1>
+    <button @click="Increment">Increment</button>
+    <button @click="Decrement">Decrement</button>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import useCounter from './hooks/useCounter'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  setup() {
+    return {
+      ...useCounter()
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
