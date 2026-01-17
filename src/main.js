@@ -10,7 +10,7 @@ import { createApp } from 'vue'
 // import App from './08_setup-provide-Inject/App.vue'
 // import App from './09_setup-监听数据变化/App.vue'
 // import App from './09_setup-监听数据变化/App-watch.vue'
-// import App from './10_setup-hooks练习/App.vue'
-import App from './11_script-setup语法/App.vue'
+import App from './10_setup-hooks练习/App.vue'
+// import App from './11_script-setup语法/App.vue'
 
 createApp(App).mount('#app')

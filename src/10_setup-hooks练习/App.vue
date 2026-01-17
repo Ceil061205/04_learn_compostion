@@ -12,7 +12,18 @@
     <component :is="currentPage"></component>
     <br><br><br><br>
     <br><br><br><br>
+    <br><br><br><br> <br><br><br><br>
     <br><br><br><br>
+    <br><br><br><br> <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br> <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br> <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br> <br><br><br><br>
+    <br><br><br><br>
+    <br><br><br><br>
+    <div class="content"></div>
   </div>
 </template>
 
@@ -41,5 +52,8 @@ export default {
 </script>
 
 <style>
-
+  .content {
+    height: 2000px;
+    width: 20000px;
+  }
 </style>
